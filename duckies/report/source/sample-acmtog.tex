@@ -1,0 +1,63 @@
+%% For the copyright see the source file.
+\documentclass[acmtog]{acmart}
+
+%% NOTE that a single column version is required for 
+%% submission and peer review. This can be done by changing
+%% the \doucmentclass[...]{acmart} in this template to 
+%% \documentclass[manuscript,screen]{acmart}
+%\AtBeginDocument{%
+%  \providecommand\BibTeX{{%
+%    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+%\setcopyright{acmcopyright}
+%\copyrightyear{2023}
+%\acmYear{2023}
+%\acmDOI{XXXXXXX.XXXXXXX}
+%\citestyle{acmauthoryear}
+
+\begin{document}
+\title{Optimizing Sales of Ducks and Fish}
+\author{Patrick Lowe}
+\email{lowe03@ads.uni-passau.de}
+\affiliation{%
+  \institution{University of Passau}
+  \streetaddress{Innstr. 41}
+  \city{Passau}
+  \country{Germany}
+  \postcode{94032}
+}
+%\renewcommand{\shortauthors}{ TEST LINE 35 TEST}
+
+\begin{abstract}
+The reproducibility of sales optimization, and how to future proof the tools used. The Excel Solver used in the Head First Data Analysis's Optimization chapter may not always be accessible, the challenge is to create an open-source alternative. While Google Sheets offers a similar solution, this project investigates the more widely accessible Python programming language and the package pulp. This tool was able to replicate results as Excels Solver while being more versatile.
+\end{abstract}
+
+\keywords{datasets, optimization, python, excel solver}
+\maketitle
+
+\section{Introduction}
+Excel is becoming outdated for big data analysis, python is one tool which can replace it. The book Head First Data Analysis's (HFDA) chapter 3 on optimization utilizes Excels Solver functionality to find the optimal number of rubber ducks and fish needed to maximise profits with limitations on resources. It then looks at a pitfall, not recognising seasonal changes in sales. However, Excel requires a subscription and is less accessible than open-source programming languages. This project looks at replicating the results from the book using Python and its available packages. There are 2 input files (1) for the data constraints and values of profit and (2) for the historical sales of both products. The python script utilises the Pulp package to analyse both files to replicate the results of the Excel Solver. 
+
+\section{Design Decisions}
+Docker is used to create a replicable environment of HFDAs Chapter 3 on optimization. 
+
+\section{Challenges}
+* Solver for excel needed to be manually added through the "addons" section
+
+* Selecting 2nd constraints is a bit arbitrary although chapter 3 has provided their answer
+
+* The 2 excel workbooks come with 2 empty sheets each
+
+\section{Limitations}
+HERE
+
+\section{Citations and Bibliographies}
+* Github for continuing work
+
+* Archive in Zenodo
+
+* Conda for environment dependencies
+
+* Docker for environment container
+
+\end{document}
+\endinput

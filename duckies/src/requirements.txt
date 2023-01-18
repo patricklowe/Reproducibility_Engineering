@@ -1,0 +1,4 @@
+pandas==1.4.4
+pulp==2.7.0
+matplotlib==3.5.1
+xlrd==2.0.1
