@@ -204,8 +204,9 @@ plt.annotate('Markers indicate Current sales for Dec-08',
 plt.savefig('historic_sales.png', bbox_inches='tight', dpi=150)
 
 
-# In[ ]:
+# In[15]:
 
-
-
-
+import os
+print("Creating LaTeX report...")
+os.system("pdflatex --shell-escape report.tex")
+#print(os.listdir(path='.'))
