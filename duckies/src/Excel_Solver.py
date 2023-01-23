@@ -10,7 +10,7 @@
 import pandas as pd # To open excel file (XLS)
 import pulp as p # the core package, to replace Excels Solver
 import matplotlib.pyplot as plt # PLotting graphs
-import datetime # adding our predicted values for graphing
+#import datetime # adding our predicted values for graphing
 import math # for a minor calculation, converting to integer could also work
 
 
@@ -36,7 +36,7 @@ duck_profit = input_df[15:16]['value1'][15]
 fish_profit = input_df[16:17]['value1'][16]
 
 
-# In[27]:
+# In[4]:
 
 
 def Solver(fish_limit, ducks_limit):
@@ -56,7 +56,6 @@ def Solver(fish_limit, ducks_limit):
     Lp_prob += f <= fish_limit
 
     # Solve the problem, print the results
-    status = Lp_prob.solve(PULP_CBC_CMD(msg=0))
     p.PULP_CBC_CMD(msg=0).solve(Lp_prob)
     print("Fish Created: " + str(int(p.value(f))))
     print("Ducks Created: " + str(int(p.value(d))))
@@ -65,7 +64,7 @@ def Solver(fish_limit, ducks_limit):
 
 # # Create 1st Analysis
 
-# In[28]:
+# In[5]:
 
 
 print("--- 1st Analysis ---")
@@ -163,6 +162,16 @@ print("Produce " + str(predicted_fish_sales) + " Fish, and " + str(predicted_duc
 # In[11]:
 
 
+# Add our predicted values for Jan-09, used for the sales graph
+sales_df.loc[len(sales_df)] = [predicted_fish_sales, 
+                               predicted_ducks_sales,
+                               (predicted_fish_sales+predicted_ducks_sales),
+                              '2009-01-01 00:00:00']
+
+
+# In[13]:
+
+
 print("--- 3rd Analysis ---")
 # Values provided in Head First Data Analysis Chapter 3
 duck_limit = predicted_ducks_sales
@@ -172,7 +181,7 @@ Solver(fish_limit,duck_limit)
 
 # # Graphs
 
-# In[12]:
+# In[14]:
 
 
 plt.figure(figsize=(9, 4.5), layout='constrained')
