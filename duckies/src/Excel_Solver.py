@@ -36,7 +36,7 @@ duck_profit = input_df[15:16]['value1'][15]
 fish_profit = input_df[16:17]['value1'][16]
 
 
-# In[4]:
+# In[27]:
 
 
 def Solver(fish_limit, ducks_limit):
@@ -56,7 +56,8 @@ def Solver(fish_limit, ducks_limit):
     Lp_prob += f <= fish_limit
 
     # Solve the problem, print the results
-    status = Lp_prob.solve()
+    status = Lp_prob.solve(PULP_CBC_CMD(msg=0))
+    p.PULP_CBC_CMD(msg=0).solve(Lp_prob)
     print("Fish Created: " + str(int(p.value(f))))
     print("Ducks Created: " + str(int(p.value(d))))
     print("Profit Expected: $" + str(int(p.value(Lp_prob.objective))))
@@ -64,7 +65,7 @@ def Solver(fish_limit, ducks_limit):
 
 # # Create 1st Analysis
 
-# In[5]:
+# In[28]:
 
 
 print("--- 1st Analysis ---")
@@ -171,7 +172,7 @@ Solver(fish_limit,duck_limit)
 
 # # Graphs
 
-# In[86]:
+# In[12]:
 
 
 plt.figure(figsize=(9, 4.5), layout='constrained')

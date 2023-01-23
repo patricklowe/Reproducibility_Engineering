@@ -40,12 +40,10 @@ Excel is becoming outdated for big data analysis, python is one tool which can r
 \section{Methodology}
 Docker is used to create a replicable environment of HFDAs Chapter 3 on optimization since it has the ability to create an environment which can replicate the results in 1 step. Other alternatives such as Podman and VirtualBox however these have more set-up and space requirements than Docker. It is also a widely used, open-source, virtual container which increases its chance of being available long term. 
 
-Since Excel requires a license to be run, we have opted to use Python since it is open source, requires minimal set-up, and is human-readable. We use the python package pandas to read the XLS data file, math is used to for calculations 
+Since Excel requires a license to be run, we have opted to use Python since it is open source, requires minimal set-up, and is human-readable. We use the python package pandas to read the XLS data file, math is used to for calculations, datetime is used for graph data, matplotlib is used for the graph, and the main package we need is PuLP. The PuLP package is a linear problem solver package, and has a BSD license allowing for redistribution. 
 
-* PYTHON PACKAGES
-
-* LATEX
-
+	In order to create a report on-demand, we have chosen \LaTeX\ 
+	
 * Solver for excel needed to be manually added through the "addons" section
 
 * Selecting 2nd constraints is a bit arbitrary although chapter 3 has provided their answer

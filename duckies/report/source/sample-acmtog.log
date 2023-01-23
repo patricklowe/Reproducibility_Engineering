@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.5)  22 JAN 2023 13:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.5)  23 JAN 2023 13:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -983,6 +983,10 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 37.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 45.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 45.
 
 (C:\Users\patri\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-pdfdoc.d
 ef
@@ -999,21 +1003,15 @@ Package balance Warning: You have called \balance in second column
 
 ]
 (sample-acmtog.aux)
-
-Package rerunfilecheck Warning: File `sample-acmtog.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `sample-acmtog.out':
-(rerunfilecheck)             Before: 8B586E2CB1566291DF70C3A34B3B93C7;758
-(rerunfilecheck)             After:  61F819D7BD9654FAD647E419F82D6DB0;705.
+Package rerunfilecheck Info: File `sample-acmtog.out' has not changed.
+(rerunfilecheck)             Checksum: 61F819D7BD9654FAD647E419F82D6DB0;705.
  ) 
 Here is how much of TeX's memory you used:
- 20615 strings out of 475385
- 338199 string characters out of 2776907
- 745424 words of memory out of 3000000
- 41309 multiletter control sequences out of 15000+600000
- 557330 words of font info for 166 fonts, out of 8000000 for 9000
+ 20676 strings out of 475385
+ 339578 string characters out of 2776907
+ 746822 words of memory out of 3000000
+ 41342 multiletter control sequences out of 15000+600000
+ 569198 words of font info for 190 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  84i,11n,131p,1012b,510s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/patri/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_
@@ -1025,9 +1023,9 @@ KTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/patri/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/patr
 i/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb
 >
-Output written on sample-acmtog.pdf (1 page, 252762 bytes).
+Output written on sample-acmtog.pdf (1 page, 252924 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
+ 71 PDF objects out of 1000 (max. 8388607)
  9 named destinations out of 1000 (max. 500000)
- 47169 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 55369 words of extra memory for PDF output out of 61914 (max. 10000000)
 
