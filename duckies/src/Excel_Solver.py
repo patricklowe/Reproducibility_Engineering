@@ -159,6 +159,8 @@ print("Produce " + str(predicted_fish_sales) + " Fish, and " + str(predicted_duc
 #Produce 98 Fish, and 133 Ducks for next month
 
 
+# # Create 3rd Analysis
+
 # In[11]:
 
 
@@ -169,7 +171,7 @@ sales_df.loc[len(sales_df)] = [predicted_fish_sales,
                               '2009-01-01 00:00:00']
 
 
-# In[13]:
+# In[12]:
 
 
 print("--- 3rd Analysis ---")
@@ -181,7 +183,35 @@ Solver(fish_limit,duck_limit)
 
 # # Graphs
 
+# In[13]:
+
+
+# Since this data is not exactly needed/obtainable we have opted to create a visually identical graph using a custom dataframe
+data =[]
+for i in range(0,80):
+    data.append(400)
+for i in range(0,219):
+    data.append(400-i)
+data.append(0)
+df = pd.DataFrame(data, columns=['Optimized'])
+
+
 # In[14]:
+
+
+plt.figure()
+plt.plot(df['Optimized'], label='Potential Mix', color="green")
+plt.fill_between(df['Optimized'].index, df['Optimized'], color='green', alpha=0.1)
+plt.legend()
+plt.xlim(0,500)
+plt.ylim(0,500)
+plt.xlabel('Fish')
+plt.ylabel('Ducks')
+plt.title("Potential Mix For Sale")
+plt.savefig('potential_mix.jpg', bbox_inches='tight', dpi=150)
+
+
+# In[15]:
 
 
 plt.figure(figsize=(9, 4.5), layout='constrained')
@@ -201,12 +231,18 @@ plt.annotate('Markers indicate Current sales for Dec-08',
              ha='right',
              va="center",
              fontsize=10)
-plt.savefig('historic_sales.png', bbox_inches='tight', dpi=150)
+plt.savefig('historic_sales.jpg', bbox_inches='tight', dpi=150)
 
 
-# In[15]:
+# In[16]:
+
 
 import os
-print("Creating LaTeX report...")
-os.system("pdflatex --shell-escape report.tex")
-#print(os.listdir(path='.'))
+os.system("pdflatex ../report/report.tex")
+
+
+# In[ ]:
+
+
+
+
