@@ -183,31 +183,36 @@ Solver(fish_limit,duck_limit)
 
 # # Graphs
 
-# In[13]:
+# In[25]:
 
 
 # Since this data is not exactly needed/obtainable we have opted to create a visually identical graph using a custom dataframe
 data =[]
-for i in range(0,80):
+for i in range(0,81):
     data.append(400)
-for i in range(0,219):
+for i in range(0,220):
     data.append(400-i)
 data.append(0)
 df = pd.DataFrame(data, columns=['Optimized'])
 
 
-# In[14]:
+# In[69]:
 
 
 plt.figure()
 plt.plot(df['Optimized'], label='Potential Mix', color="green")
 plt.fill_between(df['Optimized'].index, df['Optimized'], color='green', alpha=0.1)
-plt.legend()
 plt.xlim(0,500)
 plt.ylim(0,500)
 plt.xlabel('Fish')
 plt.ylabel('Ducks')
 plt.title("Potential Mix For Sale")
+plt.axvline(x=300, color='grey',linestyle=':')
+plt.axhline(y=400, color='grey',linestyle=':')
+plt.plot(80, 400, 'ro', label="1st Profit: $2320") # 1st analysis
+plt.plot(50, 150, 'bo', label="2nd Profit: $950") # 2nd analysis
+plt.plot(98, 133, 'go', label="Our Profit: $1057") # Our analysis
+plt.legend(loc="right")
 plt.savefig('potential_mix.jpg', bbox_inches='tight', dpi=150)
 
 
