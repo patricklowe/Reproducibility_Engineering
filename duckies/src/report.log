@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.5)  25 JAN 2023 10:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.5)  25 JAN 2023 10:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -734,14 +734,17 @@ tex.def
 File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count310
 \l__pdf_internal_box=\box61
+) (report.aux
+
+LaTeX Warning: Label `fig:boat1' multiply defined.
+
 )
-No file report.aux.
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 17.
 LaTeX Font Info:    Trying to load font information for OML+nxlmi on input line
  17.
-(C:\Users\patri\AppData\Local\Programs\MiKTeX\tex/latex/newtx\omlnxlmi.fd
+ (C:\Users\patri\AppData\Local\Programs\MiKTeX\tex/latex/newtx\omlnxlmi.fd
 File: omlnxlmi.fd 2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
 )
 LaTeX Font Info:    ... okay on input line 17.
@@ -851,6 +854,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Package hyperref Info: Link coloring OFF on input line 17.
+
+(report.out) (report.out)
 \@outlinefile=\write4
 \openout4 = `report.out'.
 
@@ -965,10 +970,6 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 8.0pt on input line 35.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 8.0pt on input line 35.
-
-
-LaTeX Warning: Reference `TotPages' on page 1 undefined on input line 35.
-
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 35.
 Package microtype Info: Loading generic protrusion settings for font family
@@ -977,6 +978,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.2pt on input line 35.
+
 (C:\Users\patri\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
@@ -995,18 +997,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [1.1{C:/Users/patri/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ]
-<historic_sales.jpg, id=20, 658.6206pt x 334.3692pt>
+<historic_sales.jpg, id=47, 470.7186pt x 356.0502pt>
 File: historic_sales.jpg Graphic file (type jpg)
 <use historic_sales.jpg>
 Package pdftex.def Info: historic_sales.jpg  used on input line 62.
-(pdftex.def)             Requested size: 243.14749pt x 123.43915pt.
+(pdftex.def)             Requested size: 243.14749pt x 183.91933pt.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 63.
 
 
 Class acmart Warning: A possible image without description on input line 65.
 
-<potential_mix.jpg, id=22, 422.0568pt x 326.6604pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<potential_mix.jpg, id=48, 422.0568pt x 326.6604pt>
 File: potential_mix.jpg Graphic file (type jpg)
 <use potential_mix.jpg>
 Package pdftex.def Info: potential_mix.jpg  used on input line 68.
@@ -1028,10 +1033,6 @@ File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
 
 Class acmart Warning: Some images may lack descriptions.
 
-
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
-
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 7.0pt on input line 85.
 LaTeX Font Info:    Trying to load font information for TS1+LinuxBiolinumT-TLF 
@@ -1050,25 +1051,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
  [2.2 <./historic_sales.jpg> <./potential_mix.jpg>] (report.aux)
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  027C1AD9B38CC663BE27DB57036B6EA7;710.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 027C1AD9B38CC663BE27DB57036B6EA7;710.
  ) 
 Here is how much of TeX's memory you used:
- 20809 strings out of 475385
- 342762 string characters out of 2776907
- 759659 words of memory out of 3000000
- 41378 multiletter control sequences out of 15000+600000
+ 20823 strings out of 475385
+ 343145 string characters out of 2776907
+ 759555 words of memory out of 3000000
+ 41386 multiletter control sequences out of 15000+600000
  587529 words of font info for 250 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  84i,12n,131p,1235b,522s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1082,9 +1074,9 @@ ograms/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/patri/App
 Data/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/U
 sers/patri/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibert
 ineTB.pfb>
-Output written on report.pdf (2 pages, 372470 bytes).
+Output written on report.pdf (2 pages, 379459 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
+ 83 PDF objects out of 1000 (max. 8388607)
  12 named destinations out of 1000 (max. 500000)
- 67611 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 67667 words of extra memory for PDF output out of 74296 (max. 10000000)
 
